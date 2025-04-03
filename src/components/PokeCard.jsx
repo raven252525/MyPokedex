@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getFullPokedexNumber, getPokedexNumber } from "../utils"
 import  TypeCard  from "./TypeCard"
+import Modal from "./Modal"
 
 export default function PokeCard(props) {
     const { selectedPokemon } = props
@@ -74,8 +75,19 @@ export default function PokeCard(props) {
         )
     }
 
+    // anything you write in btwn modal becomes the children props in modal.jsx
     return (
         <div className="poke-card">
+            <Modal handleCloseModal={() => { }}>
+                <div>
+                    <h6>Name</h6>
+                    <h2></h2>
+                </div>
+                <div>
+                    <h6>Description</h6>
+                    <p>asdasd</p>
+                </div>
+            </Modal>
             <div>
         <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
         <h2>{name}</h2>
