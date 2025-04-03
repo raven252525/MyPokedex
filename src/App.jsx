@@ -1,6 +1,8 @@
-import { Header } from "./components/Header"
-import { PokeCard } from "./components/PokeCard"
-import { SideNav } from "./components/SideNav"
+import  Header  from "./components/Header"
+import  PokeCard  from "./components/PokeCard"
+import  SideNav  from "./components/SideNav"
+// default keyword allows us to not need to destruct
+
 
 import { useState } from "react"
 

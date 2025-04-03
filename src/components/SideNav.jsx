@@ -2,7 +2,7 @@ import { first151Pokemon, getFullPokedexNumber } from '../utils'
 //index is automatically imported if only file in fodlder
 
 
-export function SideNav() {
+export default function SideNav() {
     return (
         <nav>
             <div className={"header"}>
